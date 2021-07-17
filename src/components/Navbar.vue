@@ -9,10 +9,16 @@
                 Features
             </span>
             <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none">
+                Plans & Pricing
+            </span>
+            <span class="select-none px-4 text-gray-400">
+                |
+            </span>
+            <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none">
                 Sign in
             </span>
             <span class="flex items-center px-3 h-full select-none">
-                <button class="px-4 py-1.5 text-white bg-red-500 hover:bg-red-400 focus:no-outline focus:ring-2 ring-gray-300">Get started</button>
+                <button class="px-4 py-1.5 text-white bg-red-500 hover:bg-red-400 focus:no-outline focus:ring-2 ring-gray-300 duration-75">Get started</button>
             </span>
         </span>
     </nav>

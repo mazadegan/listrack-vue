@@ -21,7 +21,7 @@
                         </span>
                     </span>
                 </span>
-                <button class="w-full py-2 bg-red-500 text-white hover:bg-red-400 focus:ring-2 ring-gray-300">
+                <button class="w-full py-2 bg-red-500 text-white hover:bg-red-400 focus:ring-2 ring-gray-300 duration-75">
                     Sign up
                 </button>
             </span>
