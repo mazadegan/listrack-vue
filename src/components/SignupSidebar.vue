@@ -1,0 +1,91 @@
+<template>
+    <div id="SignupSidebar" class="fixed hidden md:flex items-center w-1/3 h-screen bg-white shadow-lg" :class="animationClass">
+        <div class="flex flex-col w-full px-14">
+            <span class="text-2xl font-bold">Sign up</span> 
+            <span class="flex flex-col w-full space-y-6">
+                <span class="text-xs">Or 
+                    <span class="text-red-600 hover:underline cursor-pointer">
+                        sign into your account.
+                    </span>
+                </span>
+                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="First name">
+                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Last name">
+                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Email">
+                <input type="password" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Password">
+                <span class="flex justify-start items-center w-full space-x-2">
+                    <Checkbox></Checkbox>
+                    <span>
+                        I agree to the
+                        <span class="text-red-500 hover:underline cursor-pointer">
+                            ListRack Terms.
+                        </span>
+                    </span>
+                </span>
+                <button class="w-full py-2 bg-red-500 text-white hover:bg-red-400 focus:ring-2 ring-gray-300">
+                    Sign up
+                </button>
+            </span>
+        </div>
+    </div>
+</template>
+
+<script>
+import Checkbox from '@/components/Checkbox.vue';
+
+export default {
+    data: function() {
+        return {
+            scrollPosition: null,
+            animationClass: 'slideInAnim',
+        }
+    },
+    methods: {
+        updateScrollPosition() {
+            this.scrollPosition = window.scrollY;
+            console.log(this.scrollPosition)
+        },
+    },
+    mounted() {
+        window.addEventListener('scroll', this.updateScrollPosition);
+    },
+    watch: {
+        scrollPosition(newValue) {
+            if(newValue > 100) {
+                this.animationClass = 'slideOutAnim';
+            }
+            if(newValue <= 100) {
+                this.animationClass = 'slideInAnim';
+            }
+        }
+    },
+    components: {
+        Checkbox,
+    },
+}
+</script>
+
+<style>
+#SignupSidebar {
+    z-index: 0;
+}
+@keyframes slideOut {
+    0% {right: 0}
+    100% {right: -35vw;}
+}
+.slideOutAnim {
+    animation-name: slideOut;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    right: -35vw;
+}
+@keyframes slideIn {
+    0% {right: -35vw}
+    100% {right: 0;}
+}
+.slideInAnim {
+    animation-name: slideIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    right: 0;
+}
+</style>
