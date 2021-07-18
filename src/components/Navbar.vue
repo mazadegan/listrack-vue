@@ -5,10 +5,10 @@
             <span class="text-xl" style="font-family:'Unica One'">ListRack</span>
         </span>
         <span class="flex items-center space-x-0 md:space-x-3 h-full">
-            <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none">
+            <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none" @click="scrollTo('Features')">
                 Features
             </span>
-            <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none">
+            <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none" @click="scrollTo('Pricing')">
                 Plans & Pricing
             </span>
             <span class="select-none px-4 text-gray-400">
@@ -26,12 +26,17 @@
 
 <script>
 export default {
-
+    methods: {
+        scrollTo(elementId) {
+            document.getElementById(elementId).scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+    },
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 nav {
     z-index: 1;
 }

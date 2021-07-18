@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-screen">
-        <Navbar></Navbar>
         <!--
+        <Navbar></Navbar>
         <div id="nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link>
@@ -12,17 +12,18 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
+// import Navbar from '@/components/Navbar.vue';
 
 export default {
     components: {
-        Navbar,
+        //Navbar,
     },
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 #app {
       font-family: Poppins;
       -webkit-font-smoothing: antialiased;

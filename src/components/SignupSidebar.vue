@@ -8,10 +8,10 @@
                         sign into your account.
                     </span>
                 </span>
-                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="First name">
-                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Last name">
-                <input type="text" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Email">
-                <input type="password" class="w-full border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Password">
+                <input type="text" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="First name">
+                <input type="text" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Last name">
+                <input type="text" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Email">
+                <input type="password" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Password">
                 <span class="flex justify-start items-center w-full space-x-2">
                     <Checkbox></Checkbox>
                     <span>
@@ -42,7 +42,6 @@ export default {
     methods: {
         updateScrollPosition() {
             this.scrollPosition = window.scrollY;
-            console.log(this.scrollPosition)
         },
     },
     mounted() {
@@ -50,10 +49,10 @@ export default {
     },
     watch: {
         scrollPosition(newValue) {
-            if(newValue > 100) {
+            if(newValue > 200) {
                 this.animationClass = 'slideOutAnim';
             }
-            if(newValue <= 100) {
+            if(newValue <= 200) {
                 this.animationClass = 'slideInAnim';
             }
         }
@@ -74,7 +73,7 @@ export default {
 }
 .slideOutAnim {
     animation-name: slideOut;
-    animation-duration: .5s;
+    animation-duration: .25s;
     animation-timing-function: ease-in-out;
     right: -35vw;
 }
@@ -84,7 +83,7 @@ export default {
 }
 .slideInAnim {
     animation-name: slideIn;
-    animation-duration: .5s;
+    animation-duration: .25s;
     animation-timing-function: ease-in-out;
     right: 0;
 }
