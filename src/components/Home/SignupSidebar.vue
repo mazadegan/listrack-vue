@@ -4,9 +4,9 @@
             <span class="text-2xl font-bold">Sign up</span> 
             <span class="flex flex-col w-full space-y-6">
                 <span class="text-xs">Or 
-                    <span class="text-red-600 hover:underline cursor-pointer">
+                    <router-link to="/signin" class="text-red-600 hover:underline cursor-pointer">
                         sign into your account.
-                    </span>
+                    </router-link>
                 </span>
                 <input type="text" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="First name">
                 <input type="text" class="w-full border border-gray-300 p-2 text-sm focus:outline-none focus:ring-2 ring-red-300" placeholder="Last name">

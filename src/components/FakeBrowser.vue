@@ -5,7 +5,7 @@
             <span class="flex w-3 h-3 rounded-full bg-yellow-600 hover:bg-yellow-500"></span>
             <span class="flex w-3 h-3 rounded-full bg-green-600 hover:bg-green-500"></span>
         </span>
-        <span class="flex justify-center items-center p-4 bg-gray-200">
+        <span class="flex justify-center items-center p-2 md:p-4 bg-gray-200">
             <slot></slot>
         </span>
     </div>
