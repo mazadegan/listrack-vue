@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col w-full px-6 md:px-32 pb-24 space-y-4 cursor-default">
+    <div class="flex flex-col w-full px-6 md:px-12 lg:px-32 pb-24 space-y-4 cursor-default">
         <span class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
             <span class="flex items-center space-x-2">
                 <Radio :selected="billingType == 'monthly' ? true : false" @click="setBillingType('monthly')"></Radio>
@@ -17,7 +17,7 @@
                 </span>
             </span> 
         </span>
-        <div class="flex flex-col md:flex-row w-full space-y-4 md:space-y-0  md:space-x-4">
+        <div class="flex flex-col md:flex-row w-full space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4">
             <PricingCard :title="pricingInfo.freeTier.title"
                          :description="pricingInfo.freeTier.description"
                          :price="pricingInfo.freeTier.price"

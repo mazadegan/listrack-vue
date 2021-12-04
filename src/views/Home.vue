@@ -4,7 +4,7 @@
         <Navbar></Navbar>
         <span class="flex w-full h-20"></span>
         <span class="flex w-full bg-red-50 cursor-default">
-            <span class="flex flex-col w-full md:w-2/3 px-6 md:px-8 pt-12 pb-24 space-y-5 md:space-y-4">
+            <span class="flex flex-col w-full lg:w-2/3 px-6 md:px-8 pt-12 pb-24 space-y-5 md:space-y-4">
                 <span class="font-bold text-4xl md:text-5xl">
                     Round off your tasks and keep your team on track-all in one place.
                 </span>
@@ -17,9 +17,7 @@
                 </router-link>
             </span>
         </span>
-        <span class="w-full bg-red-300 hidden md:flex">
-            <img src="../assets/img/wt2.jpg" alt=""> 
-        </span>
+        <img src="../assets/img/wt2.jpg" alt="" class="hidden md:flex"> 
         <span id="Features" class="flex flex-col justify-center items-center w-full py-20 md:py-16 md:py-24 px-6 md:px-24 bg-white space-y-12 md:space-y-4 cursor-default">
             <span class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-2.5 justify-center items-center text-4xl md:text-4xl">
                 <span>What can</span>
@@ -30,12 +28,12 @@
         </span>
         <Features></Features>
         <span id="Pricing" class="flex flex-col justify-center items-center w-full px-6 py-24 md:p-24  bg-white space-y-4 cursor-default">
-            <span class="hidden md:flex space-x-2.5 justify-center items-center text-3xl md:text-4xl">
+            <span class="hidden lg:flex space-x-2.5 justify-center items-center text-3xl md:text-4xl">
                 <span>Which</span>
                 <span class="text-red-500 text-4xl md:text-5xl" style="font-family:'Unica One'">ListRack</span>
                 <span>plan is best for you?</span>
             </span>
-            <span class="flex flex-col md:hidden space-x-2.5 justify-center items-center text-3xl md:text-4xl">
+            <span class="flex flex-col lg:hidden space-x-2.5 justify-center items-center text-3xl md:text-4xl">
                 <span class="flex space-x-2">
                     <span>Which</span>
                     <span class="text-red-500 text-4xl md:text-5xl" style="font-family:'Unica One'">ListRack</span>
@@ -48,16 +46,16 @@
             </span>
         </span>
         <Pricing></Pricing>
-        <span class="flex flex-col justify-center items-center w-full px-2 md:px-48 py-24 md:py-32 bg-gray-900 cursor-default space-y-12">
+        <span class="flex flex-col justify-center items-center w-full px-2 lg:px-48 py-24 md:py-32 bg-gray-900 cursor-default space-y-12">
             <span class="flex flex-col items-center justify-center text-3xl text-center md:text-4xl text-white space-y-3">
                 <Logo></Logo>
                 <span>Manage your entire team's workflow-</span>
                 <span>all from one place.</span>
             </span>
             <span class="flex h-full justify-end items-center">
-                <button class="text-gray-800 bg-white px-5 py-2 hover:bg-gray-50">
+                <router-link to="/signup" class="text-gray-800 bg-white px-5 py-2 hover:bg-gray-50">
                     Get started
-                </button>
+                </router-link>
             </span>
         </span>
         <Footer></Footer>
@@ -99,6 +97,10 @@ export default {
             // if the url contains a hash location, jump to it (substring removes the #)
             this.jumpTo(window.location.hash.substring(1, window.location.hash.length));
         }
+        //let session_data = JSON.parse(sessionStorage.getItem('session_data'))
+        // if(session_data != null) {
+        //     this.$router.push('/mainapp')
+        // }
     },
 }
 </script>

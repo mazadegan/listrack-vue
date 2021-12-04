@@ -2,24 +2,24 @@
     <span class="flex flex-col w-full cursor-default">
         <span class="flex w-full">
             <span class="flex flex-col justify-center items-center w-1/2 space-y-2">
-                <span class="flex w-full justify-start px-4 md:px-16 text-2xl md:text-3xl font-bold">Keep your team organized.</span>
-                <span class="px-4 md:px-16 text-gray-600 md:text-current">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt harum, mollitia placeat earum officiis.</span>
+                <span class="flex w-full justify-start px-4 md:px-8 lg:px-16 text-2xl md:text-3xl font-bold">Keep your team organized.</span>
+                <span class="px-4 md:px-8 lg:px-16 text-gray-600 md:text-current">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt harum, mollitia placeat earum officiis.</span>
             </span>
-            <span class="flex items-center justify-center py-24 md:px-32 w-1/2 polka-bg">
+            <span class="flex items-center justify-center py-24 md:px-8 lg:px-32 w-1/2 polka-bg">
                 <FakeBrowser>
                     <FakeList></FakeList>
                 </FakeBrowser>
             </span>
         </span>
         <span class="flex w-full">
-            <span class="flex items-center justify-center py-24 md:px-32 w-1/2 polka-bg">
+            <span class="flex items-center justify-center py-24 md:px-8 lg:px-32 w-1/2 polka-bg">
                 <FakeBrowser>
                     <FakeGraph></FakeGraph>
                 </FakeBrowser>
             </span>
             <span class="flex flex-col justify-center items-center w-1/2 space-y-2">
-                <span class="flex w-full justify-start px-4 md:px-16 text-2xl md:text-3xl font-bold">Stay on track, no matter what.</span>
-                <span class="px-4 md:px-16 text-gray-600 md:text-current">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt harum, mollitia placeat earum officiis.</span>
+                <span class="flex w-full justify-start px-4 md:px-8 lg:px-16 text-2xl md:text-3xl font-bold">Stay on track, no matter what.</span>
+                <span class="px-4 md:px-8 lg:px-16 text-gray-600 md:text-current">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum nesciunt harum, mollitia placeat earum officiis.</span>
             </span>
         </span>
     </span>

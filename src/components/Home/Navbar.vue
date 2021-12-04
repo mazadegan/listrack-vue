@@ -1,10 +1,10 @@
 <template>
     <nav id="mainNav" class="fixed w-full">
         <div class="flex flex-col w-full h-20 items-center bg-white" :class="mobileMenuToggled ? 'h-screen justify-start pt-4' : 'justify-center'">
-            <span class="flex justify-between px-2 items-center w-full">
+            <span class="flex justify-between px-2 items-center w-full md:h-full">
                 <Logo :displayText='true' :isLink="true" class="pl-1 md:pl-2"></Logo>
                 <span class="flex h-full">
-                    <span class="hidden md:flex items-center space-x-3 h-full">
+                    <span class="hidden md:flex items-center lg:space-x-3 h-full">
                         <span class="flex items-center px-3 h-full border-b-2 border-white hover:border-gray-800 cursor-pointer select-none" @click="scrollTo('Features')">
                             Features
                         </span>
@@ -42,7 +42,7 @@
                         Plans & Prices
                     </span> 
                 </span>
-                <span class="flex fixed w-full h-20 bottom-0">
+                <span class="flex fixed w-full h-16 bottom-0">
                     <router-link to="/signin" class="flex justify-center items-center w-1/2 bg-gray-100">
                         Sign in
                     </router-link>

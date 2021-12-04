@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col w-full px-6 md:px-32 pt-12 md:pt-32 pb-4 md:pb-16 bg-black text-white space-y-6">
+    <div class="flex flex-col w-full px-6 md:px-12 lg:px-32 pt-12 md:pt-16 lg:pt-32 pb-4 md:pb-8 lg:pb-16 bg-black text-white space-y-6">
         <span class="flex text-3xl font-bold" style="font-family:'Unica One'">ListRack</span>
         <span class="flex flex-col space-y-4 text-gray-100 text-sm">
             <span class="flex">

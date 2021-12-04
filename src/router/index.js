@@ -24,7 +24,27 @@ const routes = [
         path: '/signin',
         name: 'SignIn',
         component: () => import(/* webpackChunkName: "about" */ '../views/SignIn.vue')
-    }
+    },
+    {
+        path: '/welcome',
+        name: 'SignUpSuccess',
+        component: () => import(/* webpackChunkName: "about" */ '../views/SignUpSuccess.vue')
+    },
+    {
+        path: '/activated',
+        name: 'Activated',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Activated.vue')
+    },
+    {
+        path: '/mainapp',
+        name: 'MainApp',
+        component: () => import(/* webpackChunkName: "about" */ '../views/MainApp.vue')
+    },
+    {
+        path: '/password_recovery',
+        name: 'PasswordRecovery',
+        component: () => import(/* webpackChunkName: "about" */ '../views/PasswordRecovery.vue')
+    },
 ]
 
 const router = createRouter({
