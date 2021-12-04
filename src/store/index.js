@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 
 export default createStore({
     state: {
-        api_url: 'http://192.168.0.173:5000/',
+        api_url: 'https://listrack.herokuapp.com/',
         createTabIsActive: false,
         createScreenIsActive: true,
         notificationsTabIsActive: false,
